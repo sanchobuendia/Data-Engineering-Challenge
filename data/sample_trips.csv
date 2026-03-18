@@ -1,0 +1,6 @@
+city,region,origin_lat,origin_lon,destination_lat,destination_lon,trip_datetime,datasource
+New York,Brooklyn,40.7128,-74.0060,40.7306,-73.9352,2026-03-10T08:15:00,cheap_mobile
+New York,Brooklyn,40.7130,-74.0055,40.7300,-73.9340,2026-03-10T08:45:00,cheap_mobile
+New York,Manhattan,40.7580,-73.9855,40.7484,-73.9857,2026-03-11T18:05:00,premium_app
+New York,Queens,40.7282,-73.7949,40.7128,-74.0060,2026-03-12T13:20:00,cheap_mobile
+New York,Brooklyn,40.7127,-74.0061,40.7307,-73.9351,2026-03-17T09:10:00,cheap_mobile

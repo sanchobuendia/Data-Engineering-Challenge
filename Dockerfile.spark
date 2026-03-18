@@ -1,0 +1,13 @@
+FROM bitnami/spark:3.5
+
+USER root
+WORKDIR /app
+COPY spark/requirements.txt /app/requirements.txt
+RUN python3 -m pip install --no-cache-dir -r /app/requirements.txt
+COPY spark /app/spark
+COPY app /app/app
+ENV PYTHONPATH=/app
+USER 1001
+CMD ["spark-submit", \
+     "--packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3,org.postgresql:postgresql:42.7.4", \
+     "/app/spark/jobs/trips_streaming_job.py"]

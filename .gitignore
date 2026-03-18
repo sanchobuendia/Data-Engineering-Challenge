@@ -1,5 +1,16 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+.env
+.env.local
+.venv/
+venv/
+dist/
+build/
+kb_manifest.json
+credentials.json
+token.json
+.env
